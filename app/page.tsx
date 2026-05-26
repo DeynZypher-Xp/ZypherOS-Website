@@ -94,13 +94,7 @@ export default function LazioROMPortal() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-6">
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 justify-between">
             
-            <div className="flex items-center gap-3 md:gap-6">
-              <div className="relative">
-                <div className="absolute inset-0 rounded-full bg-cyan-500/20 blur-xl"></div>
-                <div className="relative w-12 h-12 md:w-16 lg:w-24 md:h-16 lg:h-24 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
-                  <span className="text-xl md:text-2xl lg:text-3xl font-bold">Z</span>
-                </div>
-              </div>
+           <div className="flex items-center gap-6"> <div className="relative"> <div className="absolute inset-0 rounded-full bg-cyan-500/20 blur-xl"></div> <img src="/Logo.jpg" alt="ZypherOS Logo" className="relative w-24 h-24 rounded-full object-cover" /> </div>
 
               <div>
                 <h1 className="text-xl md:text-2xl lg:text-4xl font-bold tracking-tight">
