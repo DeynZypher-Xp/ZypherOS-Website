@@ -2,11 +2,22 @@
 
 import { useState } from 'react';
 
+// Define the ROM type
+interface ROM {
+  device: string;
+  rom: string;
+  android: string;
+  status: string;
+  date: string;
+  link: string;
+  changelog: string[];
+}
+
 export default function LazioROMPortal() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedChangelog, setSelectedChangelog] = useState(null);
+  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [selectedChangelog, setSelectedChangelog] = useState<ROM | null>(null);
   
-  const roms = [
+  const roms: ROM[] = [
     {
       device: "Sunstone & Moonstone",
       rom: "ColorOS 16.0.7 Port",
